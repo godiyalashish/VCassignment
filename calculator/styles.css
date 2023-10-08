@@ -1,0 +1,91 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color:#BDBDBD;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 10px 1px gray;
+}
+
+
+
+.colm{
+    display: flex;
+    width:100%;
+
+    & .result{
+        color:black;
+        width:75%;
+        height: 40px;
+        display: flex;
+        padding:.5rem;
+        align-items: center;
+        content: " ";
+        overflow: scroll;
+        background-color: white;
+    }
+
+    & .result::-webkit-scrollbar {
+        width: 0;  
+    }
+    & #result{
+        white-space: nowrap;
+        padding-right:.5rem;
+        width:100%;
+        scrollbar-width: none;
+    }
+
+    & .clear{
+        width:25%;
+        height: 40px;
+        background-color: #129688;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+
+.input1{
+    background-color: #212121;
+    height: 40px;
+    width:25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #212121e1;
+    }
+}
+
+.input2{
+    background-color: #757575;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:25%;
+    transition: all 5s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #666666;
+    }
+}
